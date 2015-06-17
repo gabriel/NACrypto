@@ -25,7 +25,7 @@
 		0047C1821B30EFA20055D184 /* KeccakSponge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15B1B30EFA20055D184 /* KeccakSponge.h */; };
 		0047C1831B30EFA20055D184 /* NAAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15C1B30EFA20055D184 /* NAAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1841B30EFA20055D184 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15D1B30EFA20055D184 /* NAAES.m */; };
-		0047C1851B30EFA20055D184 /* NACounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15E1B30EFA20055D184 /* NACounter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0047C1851B30EFA20055D184 /* NACounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15E1B30EFA20055D184 /* NACounter.h */; };
 		0047C1861B30EFA20055D184 /* NACounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15F1B30EFA20055D184 /* NACounter.m */; };
 		0047C1871B30EFA20055D184 /* NADigest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1601B30EFA20055D184 /* NADigest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1881B30EFA20055D184 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1611B30EFA20055D184 /* NADigest.m */; };
@@ -39,8 +39,8 @@
 		0047C1901B30EFA20055D184 /* NANSMutableData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1691B30EFA20055D184 /* NANSMutableData+Utils.m */; };
 		0047C1911B30EFA20055D184 /* NANSString+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16A1B30EFA20055D184 /* NANSString+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1921B30EFA20055D184 /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16B1B30EFA20055D184 /* NANSString+Utils.m */; };
-		0047C1931B30EFA20055D184 /* NARandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16C1B30EFA20055D184 /* NARandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1941B30EFA20055D184 /* NARandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16D1B30EFA20055D184 /* NARandom.m */; };
+		0047C1931B30EFA20055D184 /* NASecRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16C1B30EFA20055D184 /* NASecRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0047C1941B30EFA20055D184 /* NASecRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16D1B30EFA20055D184 /* NASecRandom.m */; };
 		0047C1951B30EFA20055D184 /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16E1B30EFA20055D184 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1961B30EFA20055D184 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16F1B30EFA20055D184 /* NASHA3.m */; };
 		0047C1971B30EFA20055D184 /* NATwoFish.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1701B30EFA20055D184 /* NATwoFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,8 +103,8 @@
 		0047C1691B30EFA20055D184 /* NANSMutableData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSMutableData+Utils.m"; sourceTree = "<group>"; };
 		0047C16A1B30EFA20055D184 /* NANSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NANSString+Utils.h"; sourceTree = "<group>"; };
 		0047C16B1B30EFA20055D184 /* NANSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSString+Utils.m"; sourceTree = "<group>"; };
-		0047C16C1B30EFA20055D184 /* NARandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NARandom.h; sourceTree = "<group>"; };
-		0047C16D1B30EFA20055D184 /* NARandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandom.m; sourceTree = "<group>"; };
+		0047C16C1B30EFA20055D184 /* NASecRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecRandom.h; sourceTree = "<group>"; };
+		0047C16D1B30EFA20055D184 /* NASecRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecRandom.m; sourceTree = "<group>"; };
 		0047C16E1B30EFA20055D184 /* NASHA3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASHA3.h; sourceTree = "<group>"; };
 		0047C16F1B30EFA20055D184 /* NASHA3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASHA3.m; sourceTree = "<group>"; };
 		0047C1701B30EFA20055D184 /* NATwoFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATwoFish.h; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 				0047C1691B30EFA20055D184 /* NANSMutableData+Utils.m */,
 				0047C16A1B30EFA20055D184 /* NANSString+Utils.h */,
 				0047C16B1B30EFA20055D184 /* NANSString+Utils.m */,
-				0047C16C1B30EFA20055D184 /* NARandom.h */,
-				0047C16D1B30EFA20055D184 /* NARandom.m */,
+				0047C16C1B30EFA20055D184 /* NASecRandom.h */,
+				0047C16D1B30EFA20055D184 /* NASecRandom.m */,
 				0047C16E1B30EFA20055D184 /* NASHA3.h */,
 				0047C16F1B30EFA20055D184 /* NASHA3.m */,
 				0047C1701B30EFA20055D184 /* NATwoFish.h */,
@@ -269,7 +269,7 @@
 				0047C1781B30EFA20055D184 /* KeccakF-1600-32-s2.h in Headers */,
 				0047C17C1B30EFA20055D184 /* KeccakF-1600-opt32-settings.h in Headers */,
 				0047C18D1B30EFA20055D184 /* NANSData+Utils.h in Headers */,
-				0047C1931B30EFA20055D184 /* NARandom.h in Headers */,
+				0047C1931B30EFA20055D184 /* NASecRandom.h in Headers */,
 				0047C1831B30EFA20055D184 /* NAAES.h in Headers */,
 				0047C1371B30EED10055D184 /* NACrypto.h in Headers */,
 				0047C1771B30EFA20055D184 /* KeccakF-1600-32-s1.h in Headers */,
@@ -398,7 +398,7 @@
 				0047C1841B30EFA20055D184 /* NAAES.m in Sources */,
 				0047C1811B30EFA20055D184 /* KeccakSponge.c in Sources */,
 				0047C1861B30EFA20055D184 /* NACounter.m in Sources */,
-				0047C1941B30EFA20055D184 /* NARandom.m in Sources */,
+				0047C1941B30EFA20055D184 /* NASecRandom.m in Sources */,
 				0047C18E1B30EFA20055D184 /* NANSData+Utils.m in Sources */,
 				0047C1921B30EFA20055D184 /* NANSString+Utils.m in Sources */,
 				0047C1981B30EFA20055D184 /* NATwoFish.m in Sources */,
@@ -599,6 +599,7 @@
 				0047C1491B30EED10055D184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0047C14A1B30EED10055D184 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +608,7 @@
 				0047C14C1B30EED10055D184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  NAChloride
+//  NACrypto
 //
 //  Created by Gabriel on 1/16/14.
 //  Copyright (c) 2015 Gabriel Handford. All rights reserved.
@@ -16,13 +16,13 @@
 @implementation NAKeychainTest
 
 - (void)_testSymmetricKey {
-  NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
+  NSData *keyExisting = [NAKeychain symmetricKeyWithApplicationLabel:@"NACrypto"];
   XCTAssertNil(keyExisting);
   
-  NSData *key = [NARandom randomData:32 error:nil];
-  XCTAssertTrue([NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil]);
+  NSData *key = [NASecRandom randomData:32 error:nil];
+  XCTAssertTrue([NAKeychain addSymmetricKey:key applicationLabel:@"NACrypto" tag:nil label:nil]);
   
-  NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
+  NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NACrypto"];
   XCTAssertEqualObjects(key, keyOut);
 }
 

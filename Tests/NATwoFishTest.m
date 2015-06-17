@@ -1,5 +1,5 @@
 //
-//  NAChloride
+//  NACrypto
 //
 //  Created by Gabriel on 1/16/14.
 //  Copyright (c) 2015 Gabriel Handford. All rights reserved.

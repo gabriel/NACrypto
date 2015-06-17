@@ -1,5 +1,5 @@
 //
-//  NAChloride
+//  NACrypto
 //
 //  Created by Gabriel on 1/16/14.
 //  Copyright (c) 2015 Gabriel Handford. All rights reserved.
@@ -17,7 +17,7 @@
 
 - (void)testRandomBase64 {
   for (NSInteger i = 0; i < 64; i++) {
-    NSString *s = [NARandom randomBase64String:i error:nil];
+    NSString *s = [NASecRandom randomBase64String:i error:nil];
     NSLog(@"%@", s);
     XCTAssertEqual((NSInteger)[s length], i);
   }

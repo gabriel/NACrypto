@@ -1,7 +1,7 @@
 NACrypto
 =========
 
-You should be using [NAChloride](https://github.com/gabriel/NAChloride) (libsodium/NaCl). This is for advanced crypto only.
+You should be using [NACrypto](https://github.com/gabriel/NACrypto) (libsodium/NaCl). This is for advanced crypto only.
 
 The following use Apple's CommonCrypto framework:
 
@@ -60,8 +60,8 @@ NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
 
 ```objc
 NSData *key = [NARandom randomData:32 error:&error];
-[NAKeychain addSymmetricKey:key applicationLabel:@"NAChloride" tag:nil label:nil];
-NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NAChloride"];
+[NAKeychain addSymmetricKey:key applicationLabel:@"NACrypto" tag:nil label:nil];
+NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NACrypto"];
 ```
 
 # NSData Utils

@@ -1,6 +1,6 @@
 //
 //  NATwoFish.m
-//  NAChloride
+//  NACrypto
 //
 //  Created by Gabriel on 6/20/14.
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
@@ -20,12 +20,12 @@ static dispatch_once_t twoFishInit;
 
 - (NSData *)encrypt:(NSData *)data nonce:(NSData *)nonce key:(NSData *)key error:(NSError **)error {
   if (!nonce || [nonce length] < 16) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:700 userInfo:@{NSLocalizedDescriptionKey: @"Invalid TwoFish nonce"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:700 userInfo:@{NSLocalizedDescriptionKey: @"Invalid TwoFish nonce"}];
     return nil;
   }
   
   if (!key || [key length] != 32) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:701 userInfo:@{NSLocalizedDescriptionKey: @"Invalid TwoFish key"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:701 userInfo:@{NSLocalizedDescriptionKey: @"Invalid TwoFish key"}];
     return nil;
   }
   

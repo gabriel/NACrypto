@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char NACryptoVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NACrypto/PublicHeader.h>
 
-#import <NACrypto/NARandom.h>
+#import <NACrypto/NASecRandom.h>
 #import <NACrypto/NAHMAC.h>
 #import <NACrypto/NAKeychain.h>
 

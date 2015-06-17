@@ -1,22 +1,22 @@
 //
-//  NARandom.m
+//  NASecRandom.m
 //
 //  Created by Gabriel Handford on 1/16/14.
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
 //
 
-#import "NARandom.h"
+#import "NASecRandom.h"
 #import "NANSData+Utils.h"
 
 #include <Security/SecRandom.h>
 
-@implementation NARandom
+@implementation NASecRandom
 
 + (NSData *)randomData:(size_t)numBytes error:(NSError **)error {
   NSMutableData *data = [NSMutableData dataWithLength:numBytes];
   int ret = SecRandomCopyBytes(kSecRandomDefault, numBytes, [data mutableBytes]);
   if (ret == -1) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:50 userInfo:@{NSLocalizedDescriptionKey: @"Unable to generate random data"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:50 userInfo:@{NSLocalizedDescriptionKey: @"Unable to generate random data"}];
     return nil;
   }
   return data;

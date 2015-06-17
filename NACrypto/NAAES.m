@@ -1,6 +1,6 @@
 //
 //  NAAES.m
-//  NAChloride
+//  NACrypto
 //
 //  Created by Gabriel on 6/20/14.
 //  Copyright (c) 2014 Gabriel Handford. All rights reserved.
@@ -30,12 +30,12 @@
   NSAssert(_algorithm == NAAESAlgorithm256CTR, @"Unsupported algorithm");
   
   if (!nonce || [nonce length] < AES_256_CTR_NONCE_BYTES) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:600 userInfo:@{NSLocalizedDescriptionKey: @"Invalid AES nonce"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:600 userInfo:@{NSLocalizedDescriptionKey: @"Invalid AES nonce"}];
     return nil;
   }
   
   if (!key || [key length] != AES_256_CTR_KEY_BYTES) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:601 userInfo:@{NSLocalizedDescriptionKey: @"Invalid AES key"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:601 userInfo:@{NSLocalizedDescriptionKey: @"Invalid AES key"}];
     return nil;
   }
 
@@ -49,7 +49,7 @@
   cryptStatus = CCCryptorCreateWithMode(kCCEncrypt, kCCModeCTR, kCCAlgorithmAES128, ccNoPadding, [nonce bytes], [key bytes], [key length], NULL, 0, 0, kCCModeOptionCTR_BE, &cryptor);
   
   if (cryptStatus != kCCSuccess) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:604 userInfo:@{NSLocalizedDescriptionKey: @"Failed AES (1)"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:604 userInfo:@{NSLocalizedDescriptionKey: @"Failed AES (1)"}];
     return nil;
   }
   
@@ -57,7 +57,7 @@
   cryptStatus = CCCryptorUpdate(cryptor, [data bytes],[ data length], [outData mutableBytes], [outData length], &bytesEncrypted);
   
   if (cryptStatus != kCCSuccess) {
-    if (error) *error = [NSError errorWithDomain:@"NAChloride" code:605 userInfo:@{NSLocalizedDescriptionKey: @"Failed AES (2)"}];
+    if (error) *error = [NSError errorWithDomain:@"NACrypto" code:605 userInfo:@{NSLocalizedDescriptionKey: @"Failed AES (2)"}];
     return nil;
   }
   

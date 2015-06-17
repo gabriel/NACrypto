@@ -59,7 +59,7 @@ NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
 # Keychain Utils
 
 ```objc
-NSData *key = [NARandom randomData:32 error:&error];
+NSData *key = [NASecRandom randomData:32 error:&error];
 [NAKeychain addSymmetricKey:key applicationLabel:@"NACrypto" tag:nil label:nil];
 NSData *keyOut = [NAKeychain symmetricKeyWithApplicationLabel:@"NACrypto"];
 ```

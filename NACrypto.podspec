@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT" }
   s.author       = { "Gabriel Handford" => "gabrielh@gmail.com" }
   s.source       = { :git => "https://github.com/gabriel/NACrypto.git", :tag => s.version.to_s }
-  s.dependency 'libsodium'
   s.requires_arc = true
 
   s.ios.platform = :ios, "7.0"

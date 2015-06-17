@@ -1,7 +1,7 @@
 NACrypto
 =========
 
-You should be using NAChloride which is a wrapper around libsodium. This is for advanced crypto only.
+You should be using [NAChloride](https://github.com/gabriel/NAChloride) (libsodium/NaCl). This is for advanced crypto only.
 
 The following use Apple's CommonCrypto framework:
 

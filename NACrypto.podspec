@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "NACrypto"
-  s.version      = "1.0.4"
-  s.summary      = "Objective-C library for libsodium (NaCl)"
+  s.version      = "1.0.5"
+  s.summary      = "HMAC, Digest, AES, Twofish, SHA1, SHA2, SHA3"
   s.homepage     = "https://github.com/gabriel/NACrypto"
   s.license      = { :type => "MIT" }
   s.author       = { "Gabriel Handford" => "gabrielh@gmail.com" }

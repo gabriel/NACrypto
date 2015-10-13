@@ -14,6 +14,11 @@ http://creativecommons.org/publicdomain/zero/1.0/
 #ifndef _KeccakPermutationInterface_h_
 #define _KeccakPermutationInterface_h_
 
+typedef unsigned char UINT8;
+typedef unsigned short UINT16;
+typedef unsigned int UINT32;
+typedef uint64_t UINT64;
+
 #include "KeccakF-1600-int-set.h"
 
 void KeccakInitialize( void );

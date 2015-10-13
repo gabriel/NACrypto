@@ -16,11 +16,6 @@ http://creativecommons.org/publicdomain/zero/1.0/
 #include "KeccakF-1600-opt32-settings.h"
 #include "KeccakF-1600-interface.h"
 
-typedef unsigned char UINT8;
-typedef unsigned short UINT16;
-typedef unsigned int UINT32;
-typedef uint64_t UINT64;
-
 #ifdef UseInterleaveTables
 static int interleaveTablesBuilt = 0;
 static UINT16 interleaveTable[65536];

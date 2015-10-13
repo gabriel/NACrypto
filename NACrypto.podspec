@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NACrypto"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "HMAC, Digest, AES, Twofish, SHA1, SHA2, SHA3"
   s.homepage     = "https://github.com/gabriel/NACrypto"
   s.license      = { :type => "MIT" }

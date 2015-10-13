@@ -13,6 +13,9 @@ and related or neighboring rights to the source code in this file.
 http://creativecommons.org/publicdomain/zero/1.0/
 */
 
+#ifndef _Keccak1600_32_s1_h_
+#define _Keccak1600_32_s1_h_
+
 #define declareABCDE \
     UINT32 Aba0, Abe0, Abi0, Abo0, Abu0; \
     UINT32 Aba1, Abe1, Abi1, Abo1, Abu1; \
@@ -1185,3 +1188,4 @@ const UINT32 KeccakF1600RoundConstants_int2_1[24] = {
     X##su0 = Y##su0; \
     X##su1 = Y##su1; \
 
+#endif

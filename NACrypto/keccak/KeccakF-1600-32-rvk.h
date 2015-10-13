@@ -11,6 +11,11 @@ and related or neighboring rights to the source code in this file.
 http://creativecommons.org/publicdomain/zero/1.0/
 */
 
+#include "KeccakF-1600-interface.h"
+
+#ifndef _Keccak1600_32_rvk_h_
+#define _Keccak1600_32_rvk_h_
+
 static const UINT32 KeccakF1600RoundConstants_int2[2*24] =
 {
     0x00000001UL,    0x00000000UL,
@@ -553,3 +558,5 @@ static const UINT32 KeccakF1600RoundConstants_int2[2*24] =
     state[48] = X##su0; \
     state[49] = X##su1; \
 
+
+#endif

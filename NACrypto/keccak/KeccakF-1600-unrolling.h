@@ -10,6 +10,8 @@ To the extent possible under law, the implementer has waived all copyright
 and related or neighboring rights to the source code in this file.
 http://creativecommons.org/publicdomain/zero/1.0/
 */
+#ifndef _Keccak1600_unrolling_h_
+#define _Keccak1600_unrolling_h_
 
 #if (Unrolling == 24)
 #define rounds \
@@ -121,4 +123,6 @@ http://creativecommons.org/publicdomain/zero/1.0/
     copyToState(state, A)
 #else
 #error "Unrolling is not correctly specified!"
+#endif
+
 #endif

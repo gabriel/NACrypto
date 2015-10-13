@@ -25,7 +25,7 @@
 		0047C1821B30EFA20055D184 /* KeccakSponge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15B1B30EFA20055D184 /* KeccakSponge.h */; };
 		0047C1831B30EFA20055D184 /* NAAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15C1B30EFA20055D184 /* NAAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1841B30EFA20055D184 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15D1B30EFA20055D184 /* NAAES.m */; };
-		0047C1851B30EFA20055D184 /* NACounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15E1B30EFA20055D184 /* NACounter.h */; };
+		0047C1851B30EFA20055D184 /* NACounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15E1B30EFA20055D184 /* NACounter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1861B30EFA20055D184 /* NACounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15F1B30EFA20055D184 /* NACounter.m */; };
 		0047C1871B30EFA20055D184 /* NADigest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1601B30EFA20055D184 /* NADigest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1881B30EFA20055D184 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1611B30EFA20055D184 /* NADigest.m */; };
@@ -55,6 +55,45 @@
 		0047C1A71B30EFB10055D184 /* NATwoFishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1A01B30EFB10055D184 /* NATwoFishTest.m */; };
 		0047C1A81B30EFB10055D184 /* NAUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1A11B30EFB10055D184 /* NAUtilsTest.m */; };
 		0047C1AC1B30F0AF0055D184 /* NAAESTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1AB1B30F0AF0055D184 /* NAAESTest.m */; };
+		00A1B98F1B573312003B77A2 /* NAAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15D1B30EFA20055D184 /* NAAES.m */; };
+		00A1B9901B573312003B77A2 /* NACounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15F1B30EFA20055D184 /* NACounter.m */; };
+		00A1B9911B573312003B77A2 /* NADigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1611B30EFA20055D184 /* NADigest.m */; };
+		00A1B9921B573312003B77A2 /* NAHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1631B30EFA20055D184 /* NAHMAC.m */; };
+		00A1B9931B573312003B77A2 /* NAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1651B30EFA20055D184 /* NAKeychain.m */; };
+		00A1B9941B573312003B77A2 /* NANSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1671B30EFA20055D184 /* NANSData+Utils.m */; };
+		00A1B9951B573312003B77A2 /* NANSMutableData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1691B30EFA20055D184 /* NANSMutableData+Utils.m */; };
+		00A1B9961B573312003B77A2 /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16B1B30EFA20055D184 /* NANSString+Utils.m */; };
+		00A1B9971B573312003B77A2 /* NASecRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16D1B30EFA20055D184 /* NASecRandom.m */; };
+		00A1B9981B573312003B77A2 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16F1B30EFA20055D184 /* NASHA3.m */; };
+		00A1B9991B573312003B77A2 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1711B30EFA20055D184 /* NATwoFish.m */; };
+		00A1B99A1B573321003B77A2 /* KeccakF-1600-opt32.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1561B30EFA20055D184 /* KeccakF-1600-opt32.c */; };
+		00A1B99B1B573321003B77A2 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1581B30EFA20055D184 /* KeccakNISTInterface.c */; };
+		00A1B99C1B573321003B77A2 /* KeccakSponge.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C15A1B30EFA20055D184 /* KeccakSponge.c */; };
+		00A1B99D1B573325003B77A2 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1731B30EFA20055D184 /* twofish.c */; };
+		00A1B99E1B573330003B77A2 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C14E1B30EFA20055D184 /* brg_endian.h */; };
+		00A1B99F1B573330003B77A2 /* KeccakF-1600-32-rvk.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C14F1B30EFA20055D184 /* KeccakF-1600-32-rvk.h */; };
+		00A1B9A01B573330003B77A2 /* KeccakF-1600-32-s1.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1501B30EFA20055D184 /* KeccakF-1600-32-s1.h */; };
+		00A1B9A11B573330003B77A2 /* KeccakF-1600-32-s2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1511B30EFA20055D184 /* KeccakF-1600-32-s2.h */; };
+		00A1B9A21B573330003B77A2 /* KeccakF-1600-32.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1521B30EFA20055D184 /* KeccakF-1600-32.h */; };
+		00A1B9A31B573330003B77A2 /* KeccakF-1600-int-set.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1531B30EFA20055D184 /* KeccakF-1600-int-set.h */; };
+		00A1B9A41B573330003B77A2 /* KeccakF-1600-interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1541B30EFA20055D184 /* KeccakF-1600-interface.h */; };
+		00A1B9A51B573330003B77A2 /* KeccakF-1600-opt32-settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1551B30EFA20055D184 /* KeccakF-1600-opt32-settings.h */; };
+		00A1B9A61B573330003B77A2 /* KeccakF-1600-unrolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1571B30EFA20055D184 /* KeccakF-1600-unrolling.h */; };
+		00A1B9A71B573330003B77A2 /* KeccakNISTInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1591B30EFA20055D184 /* KeccakNISTInterface.h */; };
+		00A1B9A81B573330003B77A2 /* KeccakSponge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15B1B30EFA20055D184 /* KeccakSponge.h */; };
+		00A1B9A91B57333B003B77A2 /* NACrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1361B30EED10055D184 /* NACrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9AA1B573347003B77A2 /* NAAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15C1B30EFA20055D184 /* NAAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9AB1B573347003B77A2 /* NACounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C15E1B30EFA20055D184 /* NACounter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9AC1B573347003B77A2 /* NADigest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1601B30EFA20055D184 /* NADigest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9AD1B573347003B77A2 /* NAHMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1621B30EFA20055D184 /* NAHMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9AE1B573347003B77A2 /* NAKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1641B30EFA20055D184 /* NAKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9AF1B573347003B77A2 /* NANSData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1661B30EFA20055D184 /* NANSData+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B01B573347003B77A2 /* NANSMutableData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1681B30EFA20055D184 /* NANSMutableData+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B11B573347003B77A2 /* NANSString+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16A1B30EFA20055D184 /* NANSString+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B21B573347003B77A2 /* NASecRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16C1B30EFA20055D184 /* NASecRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B31B573347003B77A2 /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16E1B30EFA20055D184 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B41B573347003B77A2 /* NATwoFish.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1701B30EFA20055D184 /* NATwoFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B51B573417003B77A2 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1741B30EFA20055D184 /* twofish.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +160,7 @@
 		0047C1AB1B30F0AF0055D184 /* NAAESTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAESTest.m; sourceTree = "<group>"; };
 		0047C1AD1B30F0D50055D184 /* NACrypto.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NACrypto.podspec; sourceTree = "<group>"; };
 		0047C1AF1B30F1010055D184 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		00A1B9761B57327D003B77A2 /* NACrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NACrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +176,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0047C13D1B30EED10055D184 /* NACrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A1B9721B57327D003B77A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +205,7 @@
 			children = (
 				0047C1311B30EED10055D184 /* NACrypto.framework */,
 				0047C13C1B30EED10055D184 /* Tests.xctest */,
+				00A1B9761B57327D003B77A2 /* NACrypto.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,8 +299,8 @@
 		0047C1721B30EFA20055D184 /* TwoFish */ = {
 			isa = PBXGroup;
 			children = (
-				0047C1731B30EFA20055D184 /* twofish.c */,
 				0047C1741B30EFA20055D184 /* twofish.h */,
+				0047C1731B30EFA20055D184 /* twofish.c */,
 			);
 			path = TwoFish;
 			sourceTree = "<group>";
@@ -288,6 +336,37 @@
 				0047C1751B30EFA20055D184 /* brg_endian.h in Headers */,
 				0047C1761B30EFA20055D184 /* KeccakF-1600-32-rvk.h in Headers */,
 				0047C1911B30EFA20055D184 /* NANSString+Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A1B9731B57327D003B77A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1B9AE1B573347003B77A2 /* NAKeychain.h in Headers */,
+				00A1B9A01B573330003B77A2 /* KeccakF-1600-32-s1.h in Headers */,
+				00A1B9A41B573330003B77A2 /* KeccakF-1600-interface.h in Headers */,
+				00A1B9A51B573330003B77A2 /* KeccakF-1600-opt32-settings.h in Headers */,
+				00A1B9AF1B573347003B77A2 /* NANSData+Utils.h in Headers */,
+				00A1B9AA1B573347003B77A2 /* NAAES.h in Headers */,
+				00A1B99E1B573330003B77A2 /* brg_endian.h in Headers */,
+				00A1B9A11B573330003B77A2 /* KeccakF-1600-32-s2.h in Headers */,
+				00A1B9AD1B573347003B77A2 /* NAHMAC.h in Headers */,
+				00A1B9AB1B573347003B77A2 /* NACounter.h in Headers */,
+				00A1B9B21B573347003B77A2 /* NASecRandom.h in Headers */,
+				00A1B9B51B573417003B77A2 /* twofish.h in Headers */,
+				00A1B9A31B573330003B77A2 /* KeccakF-1600-int-set.h in Headers */,
+				00A1B9B01B573347003B77A2 /* NANSMutableData+Utils.h in Headers */,
+				00A1B9A71B573330003B77A2 /* KeccakNISTInterface.h in Headers */,
+				00A1B9B31B573347003B77A2 /* NASHA3.h in Headers */,
+				00A1B99F1B573330003B77A2 /* KeccakF-1600-32-rvk.h in Headers */,
+				00A1B9AC1B573347003B77A2 /* NADigest.h in Headers */,
+				00A1B9A91B57333B003B77A2 /* NACrypto.h in Headers */,
+				00A1B9B41B573347003B77A2 /* NATwoFish.h in Headers */,
+				00A1B9A21B573330003B77A2 /* KeccakF-1600-32.h in Headers */,
+				00A1B9A61B573330003B77A2 /* KeccakF-1600-unrolling.h in Headers */,
+				00A1B9A81B573330003B77A2 /* KeccakSponge.h in Headers */,
+				00A1B9B11B573347003B77A2 /* NANSString+Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,13 +409,31 @@
 			productReference = 0047C13C1B30EED10055D184 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		00A1B9751B57327D003B77A2 /* NACrypto (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A1B98D1B57327D003B77A2 /* Build configuration list for PBXNativeTarget "NACrypto (iOS)" */;
+			buildPhases = (
+				00A1B9711B57327D003B77A2 /* Sources */,
+				00A1B9721B57327D003B77A2 /* Frameworks */,
+				00A1B9731B57327D003B77A2 /* Headers */,
+				00A1B9741B57327D003B77A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NACrypto (iOS)";
+			productName = "NACrypto-iOS";
+			productReference = 00A1B9761B57327D003B77A2 /* NACrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0047C1281B30EED10055D184 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gabriel Handford";
 				TargetAttributes = {
 					0047C1301B30EED10055D184 = {
@@ -344,6 +441,9 @@
 					};
 					0047C13B1B30EED10055D184 = {
 						CreatedOnToolsVersion = 6.3.2;
+					};
+					00A1B9751B57327D003B77A2 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -360,6 +460,7 @@
 			projectRoot = "";
 			targets = (
 				0047C1301B30EED10055D184 /* NACrypto */,
+				00A1B9751B57327D003B77A2 /* NACrypto (iOS) */,
 				0047C13B1B30EED10055D184 /* Tests */,
 			);
 		};
@@ -374,6 +475,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0047C13A1B30EED10055D184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A1B9741B57327D003B77A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -420,6 +528,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00A1B9711B57327D003B77A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1B9961B573312003B77A2 /* NANSString+Utils.m in Sources */,
+				00A1B98F1B573312003B77A2 /* NAAES.m in Sources */,
+				00A1B99A1B573321003B77A2 /* KeccakF-1600-opt32.c in Sources */,
+				00A1B9931B573312003B77A2 /* NAKeychain.m in Sources */,
+				00A1B99B1B573321003B77A2 /* KeccakNISTInterface.c in Sources */,
+				00A1B99D1B573325003B77A2 /* twofish.c in Sources */,
+				00A1B9901B573312003B77A2 /* NACounter.m in Sources */,
+				00A1B9971B573312003B77A2 /* NASecRandom.m in Sources */,
+				00A1B9911B573312003B77A2 /* NADigest.m in Sources */,
+				00A1B9921B573312003B77A2 /* NAHMAC.m in Sources */,
+				00A1B9991B573312003B77A2 /* NATwoFish.m in Sources */,
+				00A1B9941B573312003B77A2 /* NANSData+Utils.m in Sources */,
+				00A1B9951B573312003B77A2 /* NANSMutableData+Utils.m in Sources */,
+				00A1B9981B573312003B77A2 /* NASHA3.m in Sources */,
+				00A1B99C1B573321003B77A2 /* KeccakSponge.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -452,6 +582,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -526,6 +657,7 @@
 				INFOPLIST_FILE = NACrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -543,6 +675,7 @@
 				INFOPLIST_FILE = NACrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -562,6 +695,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -576,7 +710,54 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00A1B9891B57327D003B77A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NACrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = NACrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00A1B98A1B57327D003B77A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NACrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.rel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = NACrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -606,6 +787,15 @@
 			buildConfigurations = (
 				0047C14B1B30EED10055D184 /* Debug */,
 				0047C14C1B30EED10055D184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A1B98D1B57327D003B77A2 /* Build configuration list for PBXNativeTarget "NACrypto (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A1B9891B57327D003B77A2 /* Debug */,
+				00A1B98A1B57327D003B77A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

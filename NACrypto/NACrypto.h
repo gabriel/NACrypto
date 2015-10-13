@@ -22,6 +22,7 @@ FOUNDATION_EXPORT const unsigned char NACryptoVersionString[];
 
 #import <NACrypto/NATwoFish.h>
 #import <NACrypto/NAAES.h>
+#import <NACrypto/NACounter.h>
 
 #import <NACrypto/NADigest.h>
 #import <NACrypto/NASHA3.h>

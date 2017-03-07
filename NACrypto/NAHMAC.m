@@ -36,11 +36,16 @@
     case NAHMACAlgorithmSHA2_384:
     case NAHMACAlgorithmSHA2_512:
       return [self _HMACSHAForKey:key data:data algorithm:algorithm];
-      
-    case NAHMACAlgorithmSHA3_256:
-    case NAHMACAlgorithmSHA3_384:
-    case NAHMACAlgorithmSHA3_512:
+
+    case NAHMACAlgorithmKeccak_256:
+    case NAHMACAlgorithmKeccak_384:
+    case NAHMACAlgorithmKeccak_512:
+    case NAHMACAlgorithmSHA3F_256:
+    case NAHMACAlgorithmSHA3F_384:
+    case NAHMACAlgorithmSHA3F_512:
       return [self _HMACSHA3ForKey:key data:data algorithm:algorithm];
+
+
   }
 }
 
@@ -72,11 +77,14 @@
   NSUInteger blockLength = 72;
   NSUInteger keyLength = [key length];
   
-  NSUInteger digestBitLength;
+  NASHA3Algorithm sha3Algorithm;
   switch (algorithm) {
-    case NAHMACAlgorithmSHA3_256: digestBitLength = 256; break;
-    case NAHMACAlgorithmSHA3_384: digestBitLength = 384; break;
-    case NAHMACAlgorithmSHA3_512: digestBitLength = 512; break;
+    case NAHMACAlgorithmSHA3F_256: sha3Algorithm = NASHA3Algorithm_256; break;
+    case NAHMACAlgorithmSHA3F_384: sha3Algorithm = NASHA3Algorithm_384; break;
+    case NAHMACAlgorithmSHA3F_512: sha3Algorithm = NASHA3Algorithm_512; break;
+    case NAHMACAlgorithmKeccak_256: sha3Algorithm = NASHA3Algorithm_Keccak_256; break;
+    case NAHMACAlgorithmKeccak_384: sha3Algorithm = NASHA3Algorithm_Keccak_384; break;
+    case NAHMACAlgorithmKeccak_512: sha3Algorithm = NASHA3Algorithm_Keccak_512; break;
       
     default:
       NSAssert(NO, @"Unsupported algorithm");
@@ -91,7 +99,7 @@
   uint8_t *keyP;
   
   if (keyLength > blockLength) {
-    key = [NASHA3 SHA3ForData:key digestBitLength:digestBitLength];
+    key = [NASHA3 SHA3ForData:key algorithm:sha3Algorithm];
     keyLength = [key length];
   }
   
@@ -112,10 +120,10 @@
     memset(k_opad + keyLength, 0x5c, blockLength - keyLength);
   }
   
-  NSData *macOut = [NASHA3 SHA3ForDatas:@[keyIn, data] digestBitLength:digestBitLength];
+  NSData *macOut = [NASHA3 SHA3ForDatas:@[keyIn, data] algorithm:sha3Algorithm];
   
   /* Perform outer digest */
-  return [NASHA3 SHA3ForDatas:@[keyOut, macOut] digestBitLength:digestBitLength];
+  return [NASHA3 SHA3ForDatas:@[keyOut, macOut] algorithm:sha3Algorithm];
 }
 
 @end

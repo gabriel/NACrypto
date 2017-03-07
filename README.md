@@ -11,8 +11,8 @@ The following use Apple's CommonCrypto framework:
 
 The following are implemented from included reference C libraries:
 
-* HMAC: *SHA3/Keccak*
-* Digest: *SHA3/Keccak*
+* HMAC: *SHA3*, *Keccak*
+* Digest: *SHA3*, *Keccak*
 * TwoFish (CTR)
 
 # Podfile
@@ -21,11 +21,11 @@ The following are implemented from included reference C libraries:
 pod "NACrypto"
 ```
 
-# HMAC (SHA1, SHA2, SHA3)
+# HMAC (SHA1, SHA2, SHA3, Keccak)
 
 ```objc
 NSData *mac1 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA2_512];
-NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3_512];
+NSData *mac2 = [NAHMAC HMACForKey:key data:data algorithm:NAHMACAlgorithmSHA3F_512];
 ```
 
 # AES (256-CTR)
@@ -46,14 +46,14 @@ NATwoFish *twoFish = [[NATwoFish alloc] init];
 NSData *encrypted = [twoFish encrypt:message nonce:nonce key:key error:&error];
 ```
 
-# Digest (SHA2, SHA3)
+# Digest (SHA2, SHA3, Keccak)
 
 ```objc
 NSData *digest1 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA2_256];
-NSData *digest2 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA3_512];
+NSData *digest2 = [NADigest digestForData:data algorithm:NADigestAlgorithmSHA3F_512];
 
-// Directly use SHA3
-NSData *sha = [NASHA3 SHA3ForData:data digestBitLength:512];
+// Directly use Keccak
+NSData *sha = [NAKeccak SHA3ForData:data digestBitLength:512];
 ```
 
 # Keychain Utils

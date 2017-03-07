@@ -14,11 +14,16 @@ typedef NS_ENUM (NSUInteger, NAHMACAlgorithm) {
   NAHMACAlgorithmSHA2_256,
   NAHMACAlgorithmSHA2_384,
   NAHMACAlgorithmSHA2_512,
-  
-  // SHA3
-  NAHMACAlgorithmSHA3_256,
-  NAHMACAlgorithmSHA3_384,
-  NAHMACAlgorithmSHA3_512,
+
+  // Keccak
+  NAHMACAlgorithmKeccak_256,
+  NAHMACAlgorithmKeccak_384,
+  NAHMACAlgorithmKeccak_512,
+
+  // SHA3 (finalized)
+  NAHMACAlgorithmSHA3F_256,
+  NAHMACAlgorithmSHA3F_384,
+  NAHMACAlgorithmSHA3F_512,
 };
 
 @interface NAHMAC : NSObject

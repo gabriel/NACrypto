@@ -15,10 +15,15 @@ typedef NS_ENUM (NSUInteger, NADigestAlgorithm) {
   NADigestAlgorithmSHA2_384,
   NADigestAlgorithmSHA2_512,
   
-  // SHA3
-  NADigestAlgorithmSHA3_256,
-  NADigestAlgorithmSHA3_384,
-  NADigestAlgorithmSHA3_512,
+  // Keccak (used to be SHA3)
+  NADigestAlgorithmKeccak_256,
+  NADigestAlgorithmKeccak_384,
+  NADigestAlgorithmKeccak_512,
+
+  // SHA3 (finalized)
+  NADigestAlgorithmSHA3F_256,
+  NADigestAlgorithmSHA3F_384,
+  NADigestAlgorithmSHA3F_512,
 };
 
 @interface NADigest : NSObject

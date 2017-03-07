@@ -41,8 +41,8 @@
 		0047C1921B30EFA20055D184 /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16B1B30EFA20055D184 /* NANSString+Utils.m */; };
 		0047C1931B30EFA20055D184 /* NASecRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16C1B30EFA20055D184 /* NASecRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1941B30EFA20055D184 /* NASecRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16D1B30EFA20055D184 /* NASecRandom.m */; };
-		0047C1951B30EFA20055D184 /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16E1B30EFA20055D184 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0047C1961B30EFA20055D184 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16F1B30EFA20055D184 /* NASHA3.m */; };
+		0047C1951B30EFA20055D184 /* NAKeccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16E1B30EFA20055D184 /* NAKeccak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0047C1961B30EFA20055D184 /* NAKeccak.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16F1B30EFA20055D184 /* NAKeccak.m */; };
 		0047C1971B30EFA20055D184 /* NATwoFish.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1701B30EFA20055D184 /* NATwoFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0047C1981B30EFA20055D184 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1711B30EFA20055D184 /* NATwoFish.m */; };
 		0047C1991B30EFA20055D184 /* twofish.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1731B30EFA20055D184 /* twofish.c */; };
@@ -51,7 +51,7 @@
 		0047C1A31B30EFB10055D184 /* NAHMACTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C19C1B30EFB10055D184 /* NAHMACTest.m */; };
 		0047C1A41B30EFB10055D184 /* NAKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C19D1B30EFB10055D184 /* NAKeychainTest.m */; };
 		0047C1A51B30EFB10055D184 /* NARandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C19E1B30EFB10055D184 /* NARandomTest.m */; };
-		0047C1A61B30EFB10055D184 /* NASHA3Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C19F1B30EFB10055D184 /* NASHA3Test.m */; };
+		0047C1A61B30EFB10055D184 /* NAKeccakTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C19F1B30EFB10055D184 /* NAKeccakTest.m */; };
 		0047C1A71B30EFB10055D184 /* NATwoFishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1A01B30EFB10055D184 /* NATwoFishTest.m */; };
 		0047C1A81B30EFB10055D184 /* NAUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1A11B30EFB10055D184 /* NAUtilsTest.m */; };
 		0047C1AC1B30F0AF0055D184 /* NAAESTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1AB1B30F0AF0055D184 /* NAAESTest.m */; };
@@ -64,7 +64,7 @@
 		00A1B9951B573312003B77A2 /* NANSMutableData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1691B30EFA20055D184 /* NANSMutableData+Utils.m */; };
 		00A1B9961B573312003B77A2 /* NANSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16B1B30EFA20055D184 /* NANSString+Utils.m */; };
 		00A1B9971B573312003B77A2 /* NASecRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16D1B30EFA20055D184 /* NASecRandom.m */; };
-		00A1B9981B573312003B77A2 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16F1B30EFA20055D184 /* NASHA3.m */; };
+		00A1B9981B573312003B77A2 /* NAKeccak.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C16F1B30EFA20055D184 /* NAKeccak.m */; };
 		00A1B9991B573312003B77A2 /* NATwoFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1711B30EFA20055D184 /* NATwoFish.m */; };
 		00A1B99A1B573321003B77A2 /* KeccakF-1600-opt32.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1561B30EFA20055D184 /* KeccakF-1600-opt32.c */; };
 		00A1B99B1B573321003B77A2 /* KeccakNISTInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 0047C1581B30EFA20055D184 /* KeccakNISTInterface.c */; };
@@ -91,9 +91,18 @@
 		00A1B9B01B573347003B77A2 /* NANSMutableData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1681B30EFA20055D184 /* NANSMutableData+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A1B9B11B573347003B77A2 /* NANSString+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16A1B30EFA20055D184 /* NANSString+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A1B9B21B573347003B77A2 /* NASecRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16C1B30EFA20055D184 /* NASecRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00A1B9B31B573347003B77A2 /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16E1B30EFA20055D184 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1B9B31B573347003B77A2 /* NAKeccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C16E1B30EFA20055D184 /* NAKeccak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A1B9B41B573347003B77A2 /* NATwoFish.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1701B30EFA20055D184 /* NATwoFish.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00A1B9B51B573417003B77A2 /* twofish.h in Headers */ = {isa = PBXBuildFile; fileRef = 0047C1741B30EFA20055D184 /* twofish.h */; };
+		00E6C4BE1E6E2CF700D2D732 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 00E6C4BC1E6E2CF700D2D732 /* sha3.c */; };
+		00E6C4BF1E6E2CF700D2D732 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 00E6C4BC1E6E2CF700D2D732 /* sha3.c */; };
+		00E6C4C01E6E2CF700D2D732 /* sha3.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E6C4BD1E6E2CF700D2D732 /* sha3.h */; };
+		00E6C4C11E6E2CF700D2D732 /* sha3.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E6C4BD1E6E2CF700D2D732 /* sha3.h */; };
+		00E6C4C41E6E2D4700D2D732 /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E6C4C21E6E2D4700D2D732 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E6C4C51E6E2D4700D2D732 /* NASHA3.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E6C4C21E6E2D4700D2D732 /* NASHA3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E6C4C61E6E2D4700D2D732 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E6C4C31E6E2D4700D2D732 /* NASHA3.m */; };
+		00E6C4C71E6E2D4700D2D732 /* NASHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E6C4C31E6E2D4700D2D732 /* NASHA3.m */; };
+		00E6C4CA1E6E357800D2D732 /* NASHA3Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E6C4C91E6E357800D2D732 /* NASHA3Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,8 +153,8 @@
 		0047C16B1B30EFA20055D184 /* NANSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NANSString+Utils.m"; sourceTree = "<group>"; };
 		0047C16C1B30EFA20055D184 /* NASecRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASecRandom.h; sourceTree = "<group>"; };
 		0047C16D1B30EFA20055D184 /* NASecRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASecRandom.m; sourceTree = "<group>"; };
-		0047C16E1B30EFA20055D184 /* NASHA3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASHA3.h; sourceTree = "<group>"; };
-		0047C16F1B30EFA20055D184 /* NASHA3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASHA3.m; sourceTree = "<group>"; };
+		0047C16E1B30EFA20055D184 /* NAKeccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAKeccak.h; sourceTree = "<group>"; };
+		0047C16F1B30EFA20055D184 /* NAKeccak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeccak.m; sourceTree = "<group>"; };
 		0047C1701B30EFA20055D184 /* NATwoFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATwoFish.h; sourceTree = "<group>"; };
 		0047C1711B30EFA20055D184 /* NATwoFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATwoFish.m; sourceTree = "<group>"; };
 		0047C1731B30EFA20055D184 /* twofish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twofish.c; sourceTree = "<group>"; };
@@ -154,13 +163,18 @@
 		0047C19C1B30EFB10055D184 /* NAHMACTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAHMACTest.m; sourceTree = "<group>"; };
 		0047C19D1B30EFB10055D184 /* NAKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeychainTest.m; sourceTree = "<group>"; };
 		0047C19E1B30EFB10055D184 /* NARandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NARandomTest.m; sourceTree = "<group>"; };
-		0047C19F1B30EFB10055D184 /* NASHA3Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASHA3Test.m; sourceTree = "<group>"; };
+		0047C19F1B30EFB10055D184 /* NAKeccakTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKeccakTest.m; sourceTree = "<group>"; };
 		0047C1A01B30EFB10055D184 /* NATwoFishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATwoFishTest.m; sourceTree = "<group>"; };
 		0047C1A11B30EFB10055D184 /* NAUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAUtilsTest.m; sourceTree = "<group>"; };
 		0047C1AB1B30F0AF0055D184 /* NAAESTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAESTest.m; sourceTree = "<group>"; };
 		0047C1AD1B30F0D50055D184 /* NACrypto.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NACrypto.podspec; sourceTree = "<group>"; };
 		0047C1AF1B30F1010055D184 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		00A1B9761B57327D003B77A2 /* NACrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NACrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E6C4BC1E6E2CF700D2D732 /* sha3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
+		00E6C4BD1E6E2CF700D2D732 /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		00E6C4C21E6E2D4700D2D732 /* NASHA3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NASHA3.h; sourceTree = "<group>"; };
+		00E6C4C31E6E2D4700D2D732 /* NASHA3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASHA3.m; sourceTree = "<group>"; };
+		00E6C4C91E6E357800D2D732 /* NASHA3Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NASHA3Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,11 +246,14 @@
 				0047C16B1B30EFA20055D184 /* NANSString+Utils.m */,
 				0047C16C1B30EFA20055D184 /* NASecRandom.h */,
 				0047C16D1B30EFA20055D184 /* NASecRandom.m */,
-				0047C16E1B30EFA20055D184 /* NASHA3.h */,
-				0047C16F1B30EFA20055D184 /* NASHA3.m */,
+				0047C16E1B30EFA20055D184 /* NAKeccak.h */,
+				0047C16F1B30EFA20055D184 /* NAKeccak.m */,
 				0047C1701B30EFA20055D184 /* NATwoFish.h */,
 				0047C1711B30EFA20055D184 /* NATwoFish.m */,
+				00E6C4C21E6E2D4700D2D732 /* NASHA3.h */,
+				00E6C4C31E6E2D4700D2D732 /* NASHA3.m */,
 				0047C14D1B30EFA20055D184 /* keccak */,
+				00E6C4BB1E6E2CE600D2D732 /* sha3 */,
 				0047C1721B30EFA20055D184 /* TwoFish */,
 				0047C1341B30EED10055D184 /* Supporting Files */,
 			);
@@ -259,7 +276,8 @@
 				0047C19C1B30EFB10055D184 /* NAHMACTest.m */,
 				0047C19D1B30EFB10055D184 /* NAKeychainTest.m */,
 				0047C19E1B30EFB10055D184 /* NARandomTest.m */,
-				0047C19F1B30EFB10055D184 /* NASHA3Test.m */,
+				0047C19F1B30EFB10055D184 /* NAKeccakTest.m */,
+				00E6C4C91E6E357800D2D732 /* NASHA3Test.m */,
 				0047C1A01B30EFB10055D184 /* NATwoFishTest.m */,
 				0047C1A11B30EFB10055D184 /* NAUtilsTest.m */,
 				0047C1411B30EED10055D184 /* Supporting Files */,
@@ -305,6 +323,15 @@
 			path = TwoFish;
 			sourceTree = "<group>";
 		};
+		00E6C4BB1E6E2CE600D2D732 /* sha3 */ = {
+			isa = PBXGroup;
+			children = (
+				00E6C4BC1E6E2CF700D2D732 /* sha3.c */,
+				00E6C4BD1E6E2CF700D2D732 /* sha3.h */,
+			);
+			path = sha3;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -312,7 +339,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E6C4C01E6E2CF700D2D732 /* sha3.h in Headers */,
 				0047C18B1B30EFA20055D184 /* NAKeychain.h in Headers */,
+				00E6C4C41E6E2D4700D2D732 /* NASHA3.h in Headers */,
 				0047C17B1B30EFA20055D184 /* KeccakF-1600-interface.h in Headers */,
 				0047C1781B30EFA20055D184 /* KeccakF-1600-32-s2.h in Headers */,
 				0047C17C1B30EFA20055D184 /* KeccakF-1600-opt32-settings.h in Headers */,
@@ -327,7 +356,7 @@
 				0047C17E1B30EFA20055D184 /* KeccakF-1600-unrolling.h in Headers */,
 				0047C18F1B30EFA20055D184 /* NANSMutableData+Utils.h in Headers */,
 				0047C1821B30EFA20055D184 /* KeccakSponge.h in Headers */,
-				0047C1951B30EFA20055D184 /* NASHA3.h in Headers */,
+				0047C1951B30EFA20055D184 /* NAKeccak.h in Headers */,
 				0047C1791B30EFA20055D184 /* KeccakF-1600-32.h in Headers */,
 				0047C1871B30EFA20055D184 /* NADigest.h in Headers */,
 				0047C1801B30EFA20055D184 /* KeccakNISTInterface.h in Headers */,
@@ -343,7 +372,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E6C4C11E6E2CF700D2D732 /* sha3.h in Headers */,
 				00A1B9AE1B573347003B77A2 /* NAKeychain.h in Headers */,
+				00E6C4C51E6E2D4700D2D732 /* NASHA3.h in Headers */,
 				00A1B9A01B573330003B77A2 /* KeccakF-1600-32-s1.h in Headers */,
 				00A1B9A41B573330003B77A2 /* KeccakF-1600-interface.h in Headers */,
 				00A1B9A51B573330003B77A2 /* KeccakF-1600-opt32-settings.h in Headers */,
@@ -358,7 +389,7 @@
 				00A1B9A31B573330003B77A2 /* KeccakF-1600-int-set.h in Headers */,
 				00A1B9B01B573347003B77A2 /* NANSMutableData+Utils.h in Headers */,
 				00A1B9A71B573330003B77A2 /* KeccakNISTInterface.h in Headers */,
-				00A1B9B31B573347003B77A2 /* NASHA3.h in Headers */,
+				00A1B9B31B573347003B77A2 /* NAKeccak.h in Headers */,
 				00A1B99F1B573330003B77A2 /* KeccakF-1600-32-rvk.h in Headers */,
 				00A1B9AC1B573347003B77A2 /* NADigest.h in Headers */,
 				00A1B9A91B57333B003B77A2 /* NACrypto.h in Headers */,
@@ -433,7 +464,7 @@
 		0047C1281B30EED10055D184 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Gabriel Handford";
 				TargetAttributes = {
 					0047C1301B30EED10055D184 = {
@@ -495,14 +526,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047C1961B30EFA20055D184 /* NASHA3.m in Sources */,
+				0047C1961B30EFA20055D184 /* NAKeccak.m in Sources */,
 				0047C17D1B30EFA20055D184 /* KeccakF-1600-opt32.c in Sources */,
 				0047C17F1B30EFA20055D184 /* KeccakNISTInterface.c in Sources */,
 				0047C18C1B30EFA20055D184 /* NAKeychain.m in Sources */,
 				0047C1881B30EFA20055D184 /* NADigest.m in Sources */,
 				0047C1991B30EFA20055D184 /* twofish.c in Sources */,
+				00E6C4BE1E6E2CF700D2D732 /* sha3.c in Sources */,
 				0047C1901B30EFA20055D184 /* NANSMutableData+Utils.m in Sources */,
 				0047C18A1B30EFA20055D184 /* NAHMAC.m in Sources */,
+				00E6C4C61E6E2D4700D2D732 /* NASHA3.m in Sources */,
 				0047C1841B30EFA20055D184 /* NAAES.m in Sources */,
 				0047C1811B30EFA20055D184 /* KeccakSponge.c in Sources */,
 				0047C1861B30EFA20055D184 /* NACounter.m in Sources */,
@@ -521,8 +554,9 @@
 				0047C1A81B30EFB10055D184 /* NAUtilsTest.m in Sources */,
 				0047C1A71B30EFB10055D184 /* NATwoFishTest.m in Sources */,
 				0047C1A51B30EFB10055D184 /* NARandomTest.m in Sources */,
-				0047C1A61B30EFB10055D184 /* NASHA3Test.m in Sources */,
+				0047C1A61B30EFB10055D184 /* NAKeccakTest.m in Sources */,
 				0047C1A41B30EFB10055D184 /* NAKeychainTest.m in Sources */,
+				00E6C4CA1E6E357800D2D732 /* NASHA3Test.m in Sources */,
 				0047C1AC1B30F0AF0055D184 /* NAAESTest.m in Sources */,
 				0047C1A31B30EFB10055D184 /* NAHMACTest.m in Sources */,
 			);
@@ -538,14 +572,16 @@
 				00A1B9931B573312003B77A2 /* NAKeychain.m in Sources */,
 				00A1B99B1B573321003B77A2 /* KeccakNISTInterface.c in Sources */,
 				00A1B99D1B573325003B77A2 /* twofish.c in Sources */,
+				00E6C4BF1E6E2CF700D2D732 /* sha3.c in Sources */,
 				00A1B9901B573312003B77A2 /* NACounter.m in Sources */,
 				00A1B9971B573312003B77A2 /* NASecRandom.m in Sources */,
+				00E6C4C71E6E2D4700D2D732 /* NASHA3.m in Sources */,
 				00A1B9911B573312003B77A2 /* NADigest.m in Sources */,
 				00A1B9921B573312003B77A2 /* NAHMAC.m in Sources */,
 				00A1B9991B573312003B77A2 /* NATwoFish.m in Sources */,
 				00A1B9941B573312003B77A2 /* NANSData+Utils.m in Sources */,
 				00A1B9951B573312003B77A2 /* NANSMutableData+Utils.m in Sources */,
-				00A1B9981B573312003B77A2 /* NASHA3.m in Sources */,
+				00A1B9981B573312003B77A2 /* NAKeccak.m in Sources */,
 				00A1B99C1B573321003B77A2 /* KeccakSponge.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,8 +610,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -620,8 +658,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -718,7 +758,7 @@
 		00A1B9891B57327D003B77A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -743,7 +783,7 @@
 		00A1B98A1B57327D003B77A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

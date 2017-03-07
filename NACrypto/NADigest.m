@@ -7,6 +7,7 @@
 //
 
 #import "NADigest.h"
+#import "NAKeccak.h"
 #import "NASHA3.h"
 
 #import <CommonCrypto/CommonDigest.h>
@@ -32,12 +33,19 @@
     case NADigestAlgorithmSHA2_512:
       return [self _SHAForData:data algorithm:algorithm];
       
-    case NADigestAlgorithmSHA3_256:
-      return [NASHA3 SHA3ForData:data digestBitLength:256];
-    case NADigestAlgorithmSHA3_384:
-      return [NASHA3 SHA3ForData:data digestBitLength:384];
-    case NADigestAlgorithmSHA3_512:
-      return [NASHA3 SHA3ForData:data digestBitLength:512];
+    case NADigestAlgorithmKeccak_256:
+      return [NAKeccak SHA3ForData:data digestBitLength:256];
+    case NADigestAlgorithmKeccak_384:
+      return [NAKeccak SHA3ForData:data digestBitLength:384];
+    case NADigestAlgorithmKeccak_512:
+      return [NAKeccak SHA3ForData:data digestBitLength:512];
+
+    case NADigestAlgorithmSHA3F_256:
+      return [NASHA3 SHA3ForData:data algorithm:NASHA3Algorithm_256];
+    case NADigestAlgorithmSHA3F_384:
+      return [NASHA3 SHA3ForData:data algorithm:NASHA3Algorithm_384];
+    case NADigestAlgorithmSHA3F_512:
+      return [NASHA3 SHA3ForData:data algorithm:NASHA3Algorithm_512];
   }
 }
 
